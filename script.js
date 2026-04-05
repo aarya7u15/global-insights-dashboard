@@ -64,3 +64,23 @@ function displayCountries(data) {
 }
 
 fetchCountries();
+
+
+
+let SearchInput=document.getElementById("search")
+SearchInput.addEventListener("input",function(){
+  let value=SearchInput.value.toLowerCase()
+  if(value===""){
+    displayCountries(countriesData);
+    return
+  }
+
+  let filteredData=countriesData.filter((country)=>{
+    let name=""
+    if(country.name && country.name.common){
+      name=country.name.common.toLowerCase()
+    }
+    return name.includes(value)
+  })
+  displayCountries(filteredData);
+})

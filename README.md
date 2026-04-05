@@ -4,7 +4,7 @@ Project Description
 
 Global Insights Dashboard is a web application that provides detailed information about countries around the world.Through an interactive and user-friendly interface,
 users can explore country data such as population, region, capital, and more.
-The application fetches real-time data from a public API and allows users to search, filter, sort, and compare countries efficiently.
+The application fetches real-time data from a public API and allows users to search, filter, sort, and add to favorites.
 
 
 
@@ -35,17 +35,11 @@ https://restcountries.com/
 
     * Sort countries by population (ascending/descending)
 
-    ⚖️ Compare Countries
-
-    * Select and compare two countries side-by-side
-
     ⭐ Favorites 
 
     * Mark countries as favorites and store them using localStorage
 
-    🌙 Dark Mode
 
-    * Toggle between light and dark themes
 
 
 

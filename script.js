@@ -65,7 +65,7 @@ function displayCountries(data) {
 
 fetchCountries();
 
-
+// SEARCH BOX :
 
 let SearchInput=document.getElementById("search")
 SearchInput.addEventListener("input",function(){

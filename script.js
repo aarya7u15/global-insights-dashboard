@@ -84,3 +84,25 @@ SearchInput.addEventListener("input",function(){
   })
   displayCountries(filteredData);
 })
+
+// FILTER BY REGION
+
+let regionSelect= document.getElementById("regionFilter");
+regionSelect.addEventListener("change",function(){
+  let selectedRegion=regionSelect.value;
+
+  if(selectedRegion===""){
+    displayCountries(countriesData)
+    return
+  }
+
+  let filteredData= countriesData.filter((country)=>{
+    let region=""
+    if(country.region){
+      region=country.region
+    }
+
+    return region===selectedRegion
+  })
+  displayCountries(filteredData)
+})

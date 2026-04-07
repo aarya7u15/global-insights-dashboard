@@ -106,3 +106,31 @@ regionSelect.addEventListener("change",function(){
   })
   displayCountries(filteredData)
 })
+
+// SORT COUNTRY
+
+let sortSelect = document.getElementById("sort");
+
+sortSelect.addEventListener("change", function() {
+
+  let sortValue = sortSelect.value;
+
+  if (sortValue === "") {
+    displayCountries(countriesData);
+    return;
+  }
+
+  let sortedData = [...countriesData].sort(function(a, b) {
+
+    let popA = a.population || 0;
+    let popB = b.population || 0;
+
+    if (sortValue === "asc") {
+      return popA - popB;
+    } else {
+      return popB - popA;
+    }
+  });
+
+  displayCountries(sortedData);
+});

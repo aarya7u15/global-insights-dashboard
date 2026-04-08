@@ -64,3 +64,21 @@ img {
 #search {
   cursor: text;
 }
+
+/* DARK THEME */
+
+.dark{
+  background-color: #121212;
+  color: white;
+}
+
+.dark .card{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark input,.dark select{
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}

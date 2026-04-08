@@ -36,7 +36,7 @@ https://restcountries.com/
 
 🌙 Dark Mode
 
-* Toggle between light and dark themes
+* Toggle between light 💡 and dark 🌙 themes
 
 
 

@@ -82,3 +82,12 @@ img {
   color: white;
   border: 1px solid #555;
 }
+
+#toggleTheme {
+  margin: 10px;
+  padding: 8px;
+}
+
+#toggleTheme:hover {
+  cursor: pointer;
+}

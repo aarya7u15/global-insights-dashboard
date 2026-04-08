@@ -45,14 +45,16 @@ function displayCountries(data) {
       region = country.region;
     }
 
-    let flag = "";
-    if (country.flags && country.flags.png) {
-      flag = country.flags.png;
-    }
+
+  let flag = "https://via.placeholder.com/150";
+
+  if (country.flags && country.flags.svg) {
+    flag = country.flags.svg;
+  }
 
     return `
       <div class="card">
-        <img src="${flag}" />
+        <img src="${flag}" alt="flag" />
         <h3>${name}</h3>
         <p>Population: ${population}</p>
         <p>Region: ${region}</p>

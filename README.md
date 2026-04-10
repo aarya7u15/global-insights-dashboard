@@ -46,3 +46,6 @@ https://restcountries.com/
 * CSS
 * JavaScript
 * Fetch API
+
+
+Live at : https://global-insights-dashboard.netlify.app/
